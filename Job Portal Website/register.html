@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - JobHunt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form onsubmit="registerUser(event)">
+    <h2>Register</h2>
+    <input type="text" id="reg-username" placeholder="Username" required />
+    <input type="password" id="reg-password" placeholder="Password" required />
+    <select id="reg-role">
+      <option value="seeker">Job Seeker</option>
+      <option value="employer">Employer</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+  <script src="users.js"></script>
+</body>
+</html>

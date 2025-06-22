@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - JobHunt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Your Dashboard</h2>
+  <input type="file" id="resumeUpload">
+  <button onclick="uploadResume()">Upload Resume</button>
+  <p id="fileStatus"></p>
+  <script>
+    function uploadResume() {
+      const fileInput = document.getElementById('resumeUpload');
+      const file = fileInput.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function () {
+          localStorage.setItem('resumeData', reader.result);
+          document.getElementById('fileStatus').innerText = 'Resume uploaded!';
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+  </script>
+</body>
+</html>
