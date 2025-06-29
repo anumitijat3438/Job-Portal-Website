@@ -1,5 +1,5 @@
 # Job-Portal-Website
-A simple Job Portal Web App to connect job seekers and recruiters.
+A modern and responsive Job Portal Web Application that connects job seekers with employers. This project is designed to simulate a platform like Naukri or Indeed with essential features like job listings, filters, user authentication, and dashboards for both candidates and recruiters.
 
 # Features
 - User Registration/Login (Candidate & Recruiter)
